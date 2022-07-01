@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 /**
  * Created by hoaiviet on 5/18/17.
  * HVWait
@@ -16,7 +18,7 @@ public class HVWait {
     private final WebDriverWait wait;
 
     public HVWait(WebDriver driver) {
-        this.wait = new WebDriverWait(driver, DEFAULT_TIMEOUT);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT));
     }
 
     public void forUrlContain(String url) {

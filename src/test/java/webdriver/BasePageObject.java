@@ -11,6 +11,8 @@ import webdriver.common.core.JavascriptAction;
 import webdriver.common.core.HVWait;
 import webdriver.common.core.driverprovider.DriverProvider;
 
+import java.util.ArrayList;
+
 /**
  * Created by hoaiviet on 5/18/17.
  * webdriver.BasePageObject
@@ -77,6 +79,15 @@ public class BasePageObject {
         } catch (Exception e) {
             e.printStackTrace();
             throw new SkipException(String.format("Can't find '%s' in the dropdown list", name));
+        }
+    }
+
+    protected void switchToNewWindow() {
+        String currentTab = driver.getWindowHandle();
+        for (String tab : driver.getWindowHandles()) {
+            if (!tab.equals(currentTab)) {
+                driver.switchTo().window(tab);
+            }
         }
     }
 }

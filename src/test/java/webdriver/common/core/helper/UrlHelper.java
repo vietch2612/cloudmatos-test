@@ -12,6 +12,6 @@ public class UrlHelper {
     private static Environment env = Configuration.getEnvironment();
 
     public static String getUrl() {
-        return "https://www.2359.co/";
+        return "https://587210927570.signin.aws.amazon.com/console";
     }
 }
