@@ -24,11 +24,7 @@ Verify that AWS EKS security groups allow incoming traffic only on TCP port 443
 * Frameworks: Selenium, TestNG
 * Reporting: Allure Report
 ### Videos & Screenshots
-* ![video](https://user-images.githubusercontent.com/14076603/177031221-96cc2b41-5a05-4b15-ae01-3d992e58fd79.mp4)
-
 * Video https://user-images.githubusercontent.com/14076603/177031221-96cc2b41-5a05-4b15-ae01-3d992e58fd79.mp4
-
-
-* Screenshots (Test Report)
+* Screenshots (Test Report) ![test_report](https://github.com/vietch2612/cloudmatos-test/blob/main/src/test/resources/reports/test_report.png?raw=true)
 ### Logs
-* testing.log
+* [testing.log](https://github.com/vietch2612/cloudmatos-test/blob/main/testing.log)
