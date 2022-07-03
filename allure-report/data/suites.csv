@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Jul 03 14:30:05 ICT 2022","Sun Jul 03 14:30:18 ICT 2022","12269","Surefire suite","Surefire test","webdriver.common.testcases.EksTest","webdriver.common.testcases.EksTest","VerifyThatSecurityGroupsAllowsIncomingTrafficOnlyOnTCP443InGroup","VerifyThatSecurityGroupsAllowsIncomingTrafficOnlyOnTCP443InGroup",""

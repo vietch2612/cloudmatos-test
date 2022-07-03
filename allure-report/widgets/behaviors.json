@@ -1,0 +1,1 @@
+{"total":1,"items":[{"uid":"db7429f56729787f216bfa955368993c","name":"AWS EKS security groups allow incoming traffic only on TCP port 443 from the Group Page","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

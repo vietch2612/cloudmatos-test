@@ -1,0 +1,1 @@
+[{"uid":"b42c54f47171e3ac","name":"VerifyThatSecurityGroupsAllowsIncomingTrafficOnlyOnTCP443InGroup","time":{"start":1656833405779,"stop":1656833418048,"duration":12269},"status":"passed","severity":"normal"}]
