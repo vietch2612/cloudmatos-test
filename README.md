@@ -17,13 +17,14 @@ Verify that AWS EKS security groups allow incoming traffic only on TCP port 443
 1. Type should be "HTTPS"
 2. Protocol should be "TCP"
 3. Port range should be "443"
+![expected_rusult](https://github.com/vietch2612/cloudmatos-test/blob/main/src/test/resources/reports/expected_result.png?raw=true)
 ## Automation test
 ### Tech stack
 * Languages: Java
 * Frameworks: Selenium, TestNG
 * Reporting: Allure Report
 ### Videos & Screenshots
-* Video
+* Video ![expected_rusult](https://github.com/vietch2612/cloudmatos-test/blob/main/src/test/resources/reports/video.mp4?raw=true)
 * Screenshots (Test Report)
 ### Logs
 * testing.log
