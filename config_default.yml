@@ -7,7 +7,7 @@ env: dev # acceptable values: uat, test, dev
 
 # Specify browser window size in format <width>x<height>, example: 800x600
 # use "maximised" value if you want browser to be maximised
-browserSize: maximised # Most common resolution for Windows devices
+browserSize: 1280x1440 # Most common resolution for Windows devices
 
 # Take screenshot
 takeScreenshots: true

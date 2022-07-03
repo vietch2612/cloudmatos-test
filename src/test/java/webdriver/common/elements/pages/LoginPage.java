@@ -18,10 +18,12 @@ public class LoginPage extends BasePageObject {
 
     @SneakyThrows
     public DashboardPage login() {
+        logger.info("Logging in to WMS Console");
         usernameTextBox.sendKeys("cloudmatos");
         passwordTextBox.sendKeys("'E}Q=muy[b--chm");
         signInButton.click();
 
+        logger.info("Login successfully, waiting a few seconds for loading");
         Thread.sleep(2_000);
 
         return new DashboardPage();

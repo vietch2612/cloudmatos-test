@@ -1,5 +1,6 @@
 package webdriver;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -23,6 +24,8 @@ public class BasePageObject {
     private final Actions actions;
     protected HVWait HVWait;
     protected JavascriptAction jsActions;
+
+    protected final static Logger logger = Logger.getLogger(BasePageObject.class);
 
     protected BasePageObject() {
         this.actions = new Actions(driver);
@@ -87,6 +90,7 @@ public class BasePageObject {
         for (String tab : driver.getWindowHandles()) {
             if (!tab.equals(currentTab)) {
                 driver.switchTo().window(tab);
+                logger.info("Switch Chromedriver to a new Window(Tab)");
             }
         }
     }

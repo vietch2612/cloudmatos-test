@@ -7,6 +7,7 @@ import webdriver.common.elements.pages.eks.EksHomePage;
 public class DashboardPage extends BasePageObject {
 
     public EksHomePage openEks() {
+        logger.info("Opening EKS page");
         driver.get("https://us-west-2.console.aws.amazon.com/eks/home?region=us-west-2#/clusters");
         return new EksHomePage();
     }

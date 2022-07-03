@@ -1,6 +1,7 @@
 package webdriver.common.elements.pages.vpc;
 
 import lombok.SneakyThrows;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,19 +42,26 @@ public class VpcSecurityGroupPage extends BasePageObject {
         switchToNewWindow();
         driver.switchTo().frame(securityFrame);
 
+        logger.info("Opening the Inbound rules tab");
         inboundRulesTab.click();
         return this;
     }
 
-    public boolean isTypeHttps() {
-        return type.getText().equals("HTTPS");
+    public String getType() {
+        String typeText = type.getText();
+        logger.info("EKS Security Group Type: " + typeText);
+        return typeText;
     }
 
-    public boolean isProtocolTcp() {
-        return protocol.getText().equals("TCP");
+    public String getProtocol() {
+        String protocolText = protocol.getText();
+        logger.info("EKS Security Group Protocol: " + protocolText);
+        return protocolText;
     }
 
-    public boolean isPortRange443() {
-        return portRange.getText().equals("443");
+    public String getPortRange() {
+        String portRangeText = portRange.getText();
+        logger.info("EKS Security Group portRangeText: " + portRangeText);
+        return portRangeText;
     }
 }
